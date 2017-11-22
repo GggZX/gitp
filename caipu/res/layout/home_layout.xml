@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.xzc.activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#87CEEB"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/home_baishe" />
+
+        <ImageButton
+            android:id="@+id/home_edittext_search"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="6"
+            android:background="@drawable/fggf" />
+
+        <ImageButton
+            android:id="@+id/home_imagebutton_login"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/home_login" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ddddd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/framelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="200dip"
+                android:background="#ffffff" >
+
+                <org.taptwo.android.widget.ViewFlow
+                    android:id="@+id/viewflow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp" >
+                </org.taptwo.android.widget.ViewFlow>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#88252525"
+                    android:gravity="center" >
+
+                    <org.taptwo.android.widget.CircleFlowIndicator
+                        android:id="@+id/viewflowindic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:padding="2dip"
+                        app:activeColor="#ff0000"
+                        app:activeType="fill"
+                        app:circleSeparation="20dip"
+                        app:inactiveColor="#ffffff"
+                        app:inactiveType="fill"
+                        app:radius="4dip" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/homenew_imageview_first"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/shouyetupian001" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo_vice_index_recipe"
+                 />
+<!-- tuijian -->
+            
+            
+            <com.xzc.utils.AsynGridView
+                android:layout_marginTop="10dp"
+                android:id="@+id/home_gridview"
+                android:verticalSpacing="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3">
+            </com.xzc.utils.AsynGridView>
+
+            <!--  ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/quanquan"/>
+                -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res/com.xzc.activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#87CEEB" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="圈圈"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/quanquanfragment_imagebutton_upsend"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/menu_loudou" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <FrameLayout
+                android:id="@+id/framelayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="200dip"
+                android:background="#ffffff" >
+
+                <org.taptwo.android.widget.ViewFlow
+                    android:id="@+id/viewflow1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp" >
+                </org.taptwo.android.widget.ViewFlow>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#88252525"
+                    android:gravity="center" >
+
+                    <org.taptwo.android.widget.CircleFlowIndicator
+                        android:id="@+id/viewflowindic1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:padding="2dip"
+                        app:activeColor="#ff0000"
+                        app:activeType="fill"
+                        app:circleSeparation="20dip"
+                        app:inactiveColor="#ffffff"
+                        app:inactiveType="fill"
+                        app:radius="4dip" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp" >
+
+                <ImageButton
+                    android:id="@+id/quanquanfragment_imagebutton_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/quanquanimg1" />
+                <!-- //274 -->
+
+                <ImageButton
+                    android:id="@+id/quanquanfragment_imagebutton_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/quanquanimg2" />
+                <!-- 252 -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/quanquanfragment_imagebutton_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/quanquanimg3" />
+                <!-- 205 -->
+
+                <ImageButton
+                    android:id="@+id/quanquanfragment_imagebutton_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/quanquanimg4" />
+                <!-- 64 -->
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="热门圈圈"
+                android:textSize="36dp"
+                android:textColor="#87CEEB"/>
+
+            <com.xzc.utils.AsynListView
+                android:id="@+id/quanquanfragment_listview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/listview_diveder_02" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

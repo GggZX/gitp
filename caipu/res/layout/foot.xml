@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E3E3E3"
+    android:layout_marginTop="3dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/foot_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/foot_home"
+                style=""
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/radio_home"
+                android:gravity="center"
+                android:text="主页"
+                android:textColor="@color/text_color" />
+
+            <RadioButton
+                android:id="@+id/foot_menu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/radio_cate"
+                android:gravity="center"
+                android:text="菜单"
+                android:textColor="@color/text_color" />
+
+            <RadioButton
+                android:id="@+id/foot_friends"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/radio_friend"
+                android:gravity="center"
+                android:text="圈圈"
+                android:textColor="@color/text_color" />
+
+            <RadioButton
+                android:id="@+id/foot_mine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/radio_mine"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@color/text_color" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

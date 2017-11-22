@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#87CEEB" >
+        <ImageButton android:id="@+id/cate_img_back"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/back_btn"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="该菜品分类"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/app_list_corner_round_bottom" />
+
+    <ListView
+        android:id="@+id/result_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"     
+        android:divider="@drawable/listview_diveder_02"/>
+
+</LinearLayout>

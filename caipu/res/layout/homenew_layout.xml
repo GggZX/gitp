@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/homenew_imagebutton_upsendbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/homenew_imagebutton_searchbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/homenew_imagebutton_lookmebtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_launcher" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <RadioButton
+            android:id="@+id/homenew_radioButton_breakfast"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:gravity="center"
+            android:text="早餐" />
+
+        <RadioButton
+            android:id="@+id/homenew_radioButton_lunch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:gravity="center"
+            android:text="午餐" />
+
+        <RadioButton
+            android:id="@+id/homenew_radioButton_dinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:gravity="center"
+            android:text="晚餐" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        >
+
+        <Gallery
+            android:id="@+id/homenew_gallery_firstgallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_launcher" />
+        <RadioGroup 
+            android:id="@+id/homenew_radiogroup_firstgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+            <RadioButton 
+                android:id="@+id/homenew_radiobutton_firstradiobutton_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+             <RadioButton 
+                android:id="@+id/homenew_radiobutton_firstradiobutton_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+              <RadioButton 
+                android:id="@+id/homenew_radiobutton_firstradiobutton_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+               <RadioButton 
+                android:id="@+id/homenew_radiobutton_firstradiobutton_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RadioGroup>
+        
+          <ImageView
+        android:id="@+id/homenew_imageview_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher" />
+
+    	<TextView 
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:text="今日推荐食谱"
+    	    android:textSize="25sp"
+    	    android:textColor="#ff0000"
+    	    android:gravity="center"
+    	    />
+    	<LinearLayout 
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal"
+    	    >
+    	 <ImageButton
+            android:id="@+id/homenew_imagebutton_caiyao"
+           	android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/homenew_imagebutton_gongxiao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/homenew_imagebutton_shuichanlei"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_launcher" />
+    	    
+    	</LinearLayout>
+    	
+    	<TextView 
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:text="菜谱圈圈"
+    	    android:textSize="25sp"
+    	    android:textColor="#ff0000"
+    	    android:gravity="center"
+    	    />
+    	  <Gallery
+            android:id="@+id/homenew_gallery_quanquangallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_launcher" />
+        <RadioGroup 
+            android:id="@+id/homenew_radiogroup_quanquangroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+            <RadioButton 
+                android:id="@+id/homenew_radiobutton_quanquanradiobutton_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+             <RadioButton 
+                android:id="@+id/homenew_radiobutton_quanquanradiobutton_q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+              <RadioButton 
+                android:id="@+id/homenew_radiobutton_quanquanradiobutton_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+               <RadioButton 
+                android:id="@+id/homenew_radiobutton_quanquanradiobutton_q4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RadioGroup>
+        
+        <ListView 
+            android:id="@+id/homenew_listview_homelist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+  
+    
+</LinearLayout>

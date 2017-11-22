@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/result_listitem_icon"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@anim/img" />
+
+        <TextView
+            android:id="@+id/result_listitem_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/result_listitem_icon"
+            android:layout_toRightOf="@id/result_listitem_icon"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="啊啊啊啊啊啊dadadsadafgghha"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/resukt_listview_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/result_listitem_title"
+            android:layout_below="@id/result_listitem_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/tags_fire"
+            android:text="标签"
+            android:textColor="#474747"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/result_listitem_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/result_listitem_icon"
+            android:layout_toRightOf="@id/result_listitem_icon"
+            android:drawableLeft="@drawable/steps_result_time"
+            android:text="8"
+            android:textColor="#474747"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/result_listitem_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/result_listitem_count"
+            android:layout_toRightOf="@id/result_listitem_count"
+            android:text="步"
+            android:textColor="#474747"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

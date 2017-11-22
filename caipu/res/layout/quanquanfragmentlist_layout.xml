@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" >
+
+        <ImageView
+            android:id="@+id/quanquanfragmentlist_imageview_photo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:id="@+id/quanquanfragmentlist_textview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/quanquanfragmentlist_imageview_photo"
+            android:layout_toRightOf="@id/quanquanfragmentlist_imageview_photo"
+            android:text="123"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/quanquanfragmentlist_textview_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quanquanfragmentlist_textview_name"
+            android:layout_toRightOf="@id/quanquanfragmentlist_imageview_photo"
+            android:text="2001" />
+
+        <TextView
+            android:id="@+id/quanquanfragmentlist_textview_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quanquanfragmentlist_textview_time"
+            android:layout_toRightOf="@id/quanquanfragmentlist_imageview_photo"
+            android:text="aaaaa" />
+
+        <ImageView
+            android:id="@+id/quanquanfragmentlist_imageview_img"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/quanquanfragmentlist_textview_content"
+            android:layout_toRightOf="@id/quanquanfragmentlist_imageview_photo" />
+
+        <TextView
+            android:id="@+id/quanquanfragmentlist_textview_zantv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/quanquanfragmentlist_imageview_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="1" />
+
+        <ImageButton
+            android:id="@+id/quanquanfragmentlist_imagebutton_zanbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/quanquanfragmentlist_imageview_img"
+            android:layout_toLeftOf="@id/quanquanfragmentlist_textview_zantv"
+            android:background="@null"
+            android:src="@drawable/zan" />
+
+        <ListView
+            android:id="@+id/quanquanfragmentlist_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/quanquanfragmentlist_imageview_img"
+            android:layout_below="@id/quanquanfragmentlist_imagebutton_zanbtn"
+            android:divider="#00000000"
+            android:dividerHeight="1px" />
+    </RelativeLayout>
+
+</RelativeLayout>

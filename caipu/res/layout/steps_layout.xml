@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/steps_img_header"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:src="@drawable/res" />
+
+                    <TextView
+                        android:id="@+id/steps_tv_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="3"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:textColor="#ff6c00"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:src="@drawable/taggf" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/tagg"
+                    android:text="做菜须知"
+                    android:textColor="#EE7621" />
+
+                <TextView
+                    android:id="@+id/steps_tv_imtro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/tagg"
+                    android:text="主要食材"
+                    android:textColor="#EE7621" />
+
+                <com.xzc.utils.AsynListView
+                    android:id="@+id/steps_list_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#00000000"
+                    android:padding="10dp" >
+                </com.xzc.utils.AsynListView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/tagg"
+                    android:text="你要准备"
+                    android:textColor="#EE7621" />
+
+                <com.xzc.utils.AsynListView
+                    android:id="@+id/steps_list_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#00000000"
+                    android:padding="10dp" >
+                </com.xzc.utils.AsynListView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/tagg"
+                    android:text="开始做菜"
+                    android:textColor="#EE7621" />
+
+                <com.xzc.utils.AsynListView
+                    android:id="@+id/steps_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+                </com.xzc.utils.AsynListView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="————到这里就没有了————" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/steps_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:src="@drawable/btn_back" />
+
+    <ImageButton
+        android:id="@+id/steps_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:src="@drawable/btn_share"
+        android:text="share" />
+
+    <ImageButton
+        android:id="@+id/steps_btn_coll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:src="@drawable/btn_collected_recipe_normal" />
+
+</FrameLayout>
