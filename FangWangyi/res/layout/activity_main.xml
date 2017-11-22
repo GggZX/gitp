@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffeeeeee" >
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#3eb0f6" >
+
+        <Button
+            android:id="@+id/bNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_new" />
+
+        <Button
+            android:id="@+id/bPersonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_personal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffeeeeee" >
+
+        <TextView
+            android:id="@+id/tvTag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/head_lines"
+            android:textSize="20sp"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:id="@+id/tvTag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/entertainment"
+            android:textSize="20sp"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:id="@+id/tvTag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/finance"
+            android:textSize="20sp"
+            android:textColor="#ff000000" />
+        <TextView 
+            android:id="@+id/tvTag4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_weight="1"
+            android:gravity="center"
+            android:text="收藏"
+            android:textSize="20sp"
+            android:textColor="#ff000000" 
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivCursor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/cursor" />
+   
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpViewPager1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg2" >
+    </android.support.v4.view.ViewPager>
+</LinearLayout>
